@@ -48,7 +48,6 @@ body {
     max-width: 95%;
 }
 
-
 p {
   display: flex;
   text-align: center;
@@ -64,16 +63,14 @@ h2 {
 
 h3 {
   display: block;
-  background-color; var(--light);
+  background-color: var(--light);
 }
 
 .cardStack {
   text-align: center;
   padding: 10px;
-  flex: 1;
   display: block;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  /* align-items:  */
   justify-content: center;
 }
 
@@ -122,13 +119,22 @@ a {
 
 .cardBox {
   background-color: var(--light);
-
 }
 
 footer {
   text-align: center;
 }
-/* @media screen and (max-width: 768px)
-main, nav {
-    flex-direction: column;
-}  */
+
+@media only screen and (min-width: 768px) {
+  .cardStack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    flex: 1 1 45%;
+  }
+  .focus {
+    flex: 2 1 100%;
+  }
+}
