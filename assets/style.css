@@ -51,6 +51,7 @@ body {
 p {
   display: flex;
   text-align: center;
+  font-weight: 400;
   
 }
 ul {
@@ -136,5 +137,8 @@ footer {
   }
   .focus {
     flex: 2 1 100%;
+  }
+  header {
+    display: flex;
   }
 }
